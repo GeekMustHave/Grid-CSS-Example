@@ -1,4 +1,4 @@
-= Mobile First Responsive Contact form Grid CSS +++<br>+++ TRavesy Media
+= Mobile First Responsive Contact form Grid CSS +++<br>+++ Travesy Media
 John Schuster <John.schuster@PhoenixWorkgrpup.com>
 v2.1b, 09/18/2018: Study Notes
 :Author: John HR Schuster
@@ -11,7 +11,7 @@ v2.1b, 09/18/2018: Study Notes
 :source-hightlighter: pygments
 :icons: font
 :docdir: */documents
-:github: Github repository
+:github: https://github.com/GeekMustHave/Grid-CSS-Example.git
 :linkattrs:
 :seclinks:
 
@@ -25,3 +25,48 @@ Reference: https://www.youtube.com/watch?v=M3qBpPw77qo[Brad Travesy Video]
 
 Location: myDev/Grid CSS - Travesy
 
+== Introduction
+
+Start design with phone first and then scale up to a desktop.
+
+Focus on using Visual Studio Code for IDE.
+
+=== Live Server
+
+Use *Live Server* extension to VSCode for dynamic web page refreshes.
+
+.Live Server Extension
+image::liveserver.png[Live Server Extension, align='center']
+
+Starting up the Live server
+
+.Starting Live Server
+image::startliveserver.png[Starting Live Server, align='center']
+
+The server opens and load the pages you selected.
+
+.Live Server Loaded
+image::liveserverloaded.png[Live Server Loaded, align='center']
+ 
+NOTE: The port is typically 5500
+ 
+
+ 
+== Emmet 
+
+
+Emmet extension built into VSCode kbd:[!+Tab] to generate HTML scafolding inside of a HTML file.
+
+== HTML responsiveness
+
+The `viewport` meta tag is important for responsive web pages
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+ 
