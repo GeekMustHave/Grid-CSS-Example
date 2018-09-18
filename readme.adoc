@@ -1,0 +1,27 @@
+= Mobile First Responsive Contact form Grid CSS +++<br>+++ TRavesy Media
+John Schuster <John.schuster@PhoenixWorkgrpup.com>
+v2.1b, 09/18/2018: Study Notes
+:Author: John HR Schuster
+:Company: PLL
+:toc: left
+:toclevels: 4:
+:imagesdir: ./images
+:pagenums:
+:experimental:
+:source-hightlighter: pygments
+:icons: font
+:docdir: */documents
+:github: Github repository
+:linkattrs:
+:seclinks:
+
+This is another of Brad's courses on going minimal.
+
+No frameworks, no CSS libraries,
+
+It uses the new Grid based CSS which in a way replaces Bootstrap.
+
+Reference: https://www.youtube.com/watch?v=M3qBpPw77qo[Brad Travesy Video]
+
+Location: myDev/Grid CSS - Travesy
+
