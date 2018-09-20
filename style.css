@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box; /*--- factor in margin and padding into width */
+}
+
+body{
+  background: #92bde7;
+  color: #485e74;
+  line-height: 1.6;  /*--- Space between the lines */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1em;
+
+}
+
+.container{
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1em;
+}
+
+ul{
+  list-style: none; /*--- Elminate the bullets on list items*/
+  padding: 0;
+}
+
+.brand{
+  text-align: center;
+}
+
+.brand span{    /*--- Span is just for the word 'Phoenix' */
+  color: #ffff  /*--- Make it white */
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7) /*--- red, green, blue transparency */
+}
+
+.wrapper > *{    /*--- > * means all elements inside of the wrapper */
+  padding: 1em;  /*--- adds padding to move labels away from the bprder line */
+}
+
+.company-info{
+  background: #c9e6ff;   /*--- Womder where Brad digs this up from */
+}
+
+/*-- Referes to the heading h3 and the ul the unordered list */
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin: 0 0 1em 0;  /*-- No margin except at bottom */
+}
+
+.contact{
+  background: #f9feff   /*--- Saw him, he has a cheat sheet to the right */
+}
+
+/* --- form styles */
+
+.contact form{  /*--- The form inside of the div named contact */
+  display: grid;   /*--- Magic grid spread stuff out */
+  grid-template-columns: 1fr 1fr;  /*-- two columns, each fractional */
+  grid-gap: 20px;
+}
+
+.contact form label{ /*--- The label tags, inside the form, inside the contact div */
+  display: block;
+
+}
+
+.contact form p { /*--- The p tags, inside the form, inside the contact div */
+  margin: 0;      /*-- Elminate the white space cause by the p paragraph margin tags */
+} 
+
+/*-- This will stack message and submit over each other */
+.contact form  .full{  /*--- Message and Submit p tags */
+  grid-column: 1 /3;   /*--- 1 column stretched out 3 wide */
+}

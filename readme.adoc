@@ -90,6 +90,16 @@ The raw form is just the HTML without any styling sheets.
 .Raw Form
 image::rawform.png[Raw Form, align='center']
  
+== CSS
+
+`*{}` - refers to everything on the page.
+
+`box-sizing: border-box;` - Any width will factor in the margin and padding into width
+
+`font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;` - A very nice display font
+
+`list-style: none;` - Elminate the bullets on the list items
+
 
 
 
