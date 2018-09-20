@@ -113,6 +113,29 @@ To add an ICON to the page use  `<i class="fa fa-road">`
 The finished form works with smaller devices first, then resizes for larger ones.  
 The reformatting for larger devices is quite a change from the mobile first.
 
+=== Mobile First
+
+.Mobile First
+image::mobilefirst.png[Mobile First, align='center']
+ 
+
+
+=== Large devices
+
+.Larger devices
+image::largerdevices.png[Larger devices, align='center']
+
+== Animate
+
+A little icing on the cake is some animation.
+
+This uses the https://daneden.github.io/animate.css/[Animate.css] style sheet.
+
+We will use the https://cdnjs.com/libraries/animate.css/[CDN version]
+
+
+
+ 
 
 
 
