@@ -57,6 +57,24 @@ NOTE: The port is typically 5500
 
 Emmet extension built into VSCode kbd:[!+Tab] to generate HTML scafolding inside of a HTML file.
 
+Create a `div` tag with a class name of `container` type
+
+ .container kbd[tab]
+
+Create a H1 tag with a class of `brand` type
+
+ h1.brand kbd[tab]
+
+To get a set of 3 list item `li` type
+
+  li*3 kdb[Tab]
+
+  
+
+
+
+
+
 == HTML responsiveness
 
 The `viewport` meta tag is important for responsive web pages
@@ -65,6 +83,13 @@ The `viewport` meta tag is important for responsive web pages
 
 
 
+== Raw Form
+
+The raw form is just the HTML without any styling sheets.
+
+.Raw Form
+image::rawform.png[Raw Form, align='center']
+ 
 
 
 
