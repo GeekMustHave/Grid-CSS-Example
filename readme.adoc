@@ -100,6 +100,21 @@ image::rawform.png[Raw Form, align='center']
 
 `list-style: none;` - Elminate the bullets on the list items
 
+== ICONS
+
+The icons come from https://use.fontawesome.com[font awesome].
+We will use the CDN and copy the link into the code.
+
+To add an ICON to the page use  `<i class="fa fa-road">`
+
+ 
+== Finished form
+
+The finished form works with smaller devices first, then resizes for larger ones.  
+The reformatting for larger devices is quite a change from the mobile first.
+
+
+
 
 
 

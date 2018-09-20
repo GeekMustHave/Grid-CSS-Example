@@ -452,6 +452,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_emmet">Emmet</a></li>
 <li><a href="#_html_responsiveness">HTML responsiveness</a></li>
+<li><a href="#_raw_form">Raw Form</a></li>
+<li><a href="#_css">CSS</a></li>
+<li><a href="#_icons">ICONS</a></li>
+<li><a href="#_finished_form">Finished form</a></li>
 </ul>
 </div>
 </div>
@@ -534,6 +538,30 @@ The port is typically 5500
 <div class="paragraph">
 <p>Emmet extension built into VSCode <span class="keyseq"><kbd>!</kbd>+<kbd>Tab</kbd></span> to generate HTML scafolding inside of a HTML file.</p>
 </div>
+<div class="paragraph">
+<p>Create a <code>div</code> tag with a class name of <code>container</code> type</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>.container kbd[tab]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Create a H1 tag with a class of <code>brand</code> type</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>h1.brand kbd[tab]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To get a set of 3 list item <code>li</code> type</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>li*3 kdb[Tab]</pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -549,11 +577,63 @@ The port is typically 5500
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_raw_form">Raw Form</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The raw form is just the HTML without any styling sheets.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="./images/rawform.png" alt="Raw Form">
+</div>
+<div class="title">Figure 4. Raw Form</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_css">CSS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>*{}</code> - refers to everything on the page.</p>
+</div>
+<div class="paragraph">
+<p><code>box-sizing: border-box;</code> - Any width will factor in the margin and padding into width</p>
+</div>
+<div class="paragraph">
+<p><code>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</code> - A very nice display font</p>
+</div>
+<div class="paragraph">
+<p><code>list-style: none;</code> - Elminate the bullets on the list items</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_icons">ICONS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The icons come from <a href="https://use.fontawesome.com">font awesome</a>.
+We will use the CDN and copy the link into the code.</p>
+</div>
+<div class="paragraph">
+<p>To add an ICON to the page use  <code>&lt;i class="fa fa-road"&gt;</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_finished_form">Finished form</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The finished form works with smaller devices first, then resizes for larger ones.
+The reformatting for larger devices is quite a change from the mobile first.</p>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 2.1b<br>
-Last updated 2018-09-18 17:52:48 Eastern Daylight Time
+Last updated 2018-09-19 23:08:23 Eastern Daylight Time
 </div>
 </div>
 </body>
