@@ -15,7 +15,9 @@ v2.1b, 09/18/2018: Study Notes
 :linkattrs:
 :seclinks:
 
-This is another of Brad's courses on going minimal.
+This is two of Brad's courses on going minimal.
+
+Using CSS Grid for mobile first app and Firebase for the data store.
 
 No frameworks, no CSS libraries,
 
@@ -137,7 +139,54 @@ We will use the https://cdnjs.com/libraries/animate.css/[CDN version]
 image::animate.gif[Animate in action]
 
 
+== Firebase Google NoSQL
 
+To use Firebase you will need a Google Account.
+The free tier is great for this type of project.
+
+Firebase is not just a NoSQL database.
+It also includes authentication, files store and testing.
+
+To access the Firebase console use the https://console.firebase.google.com/[web based GUI.]
+
+.Firebase Console
+image::firebaseconsole.png[Firebase Console, align='center']
+
+
+=== Firebase connection information
+
+The connection to Firebase is very similar to connecting to a database server.
+
+.Connection Info
+[source,JavaScript]
+----
+
+<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBrETQ3L68SI-ESgiilLfXi3d0Vpd83pUA",
+    authDomain: "contactform-1c218.firebaseapp.com",
+    databaseURL: "https://contactform-1c218.firebaseio.com",
+    projectId: "contactform-1c218",
+    storageBucket: "contactform-1c218.appspot.com",
+    messagingSenderId: "328725298353"
+  };
+  firebase.initializeApp(config);
+</script>
+----
+
+== Changes for using Firebase
+
+The original code was written without thinking about the backend.
+
+There will be a few things that need to be done to get Firebase to work here.
+
+* Catch the `Submut` with an event handler
+* Add `id='name'` to the field elements of the form
+* Connect to Firebase
+* Validation 
+* `Push` to Firebase collection
 
  
 
