@@ -37,24 +37,24 @@
       <form id='contactForm'>
         <p>
           <label>Name</label>
-          <input type="text" name="name" id='name'>
+          <input type="text" name="name" id='txtName'>
         </p>
         <p>
           <label>Company</label>
-          <input type="text" name="company" id='company'>
+          <input type="text" name="company" id='txtCompany'>
         </p>
         <p>
           <label>Email Address</label>
           <!-- @TODO change type back to 'email'-->
-          <input type="text" name="name" id='email'>
+          <input type="text" name="name" id='txtEmail'>
         </p>
         <p>
           <label>Phone Number</label>
-          <input type="text" name="phone" id='phone'>
+          <input type="text" name="phone" id='txtPhone'>
         </p>       
         <p class="full">
           <label>Message</label>
-          <textarea name="message" rows="6" id='message'></textarea>
+          <textarea name="message" rows="6" id='txtMessage'></textarea>
         </p>        
         <p class="full">
           <button type='submit'>Submit</button>
@@ -65,8 +65,12 @@
   </div>
 </div>  
 
+  <!-- Firebase , needs to be above the main.js which needs it
+  -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+  
   <!-- Script with Firebase controller in it -->
-  <script>src='maincc.js'</script>
+  <script src='main.js'></script>
 
 </body>
 </html>

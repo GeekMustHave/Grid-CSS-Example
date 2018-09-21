@@ -176,7 +176,7 @@ The connection to Firebase is very similar to connecting to a database server.
 </script>
 ----
 
-== Changes for using Firebase
+=== Changes for using Firebase
 
 The original code was written without thinking about the backend.
 
@@ -189,7 +189,46 @@ There will be a few things that need to be done to get Firebase to work here.
 * `Push` to Firebase collection
 
  
+=== Permission denied
 
+The following error is generated because by default Firebase expects to use authentication.
+
+.JavaScript Error
+[source,JavaScript]
+----
+firebase.js:1 Uncaught (in promise) Error: PERMISSION_DENIED: Permission denied
+    at firebase.js:1
+    at exceptionGuard (firebase.js:1)
+    at e.callOnCompleteCallback (firebase.js:1)
+    at firebase.js:1
+    at firebase.js:1
+    at t.onDataMessage_ (firebase.js:1)
+    at e.onDataMessage_ (firebase.js:1)
+    at e.onPrimaryMessageReceived_ (firebase.js:1)
+    at e.onMessage (firebase.js:1)
+    at e.appendFrame_ (firebase.js:1)
+----
+
+The collection must be set to allow anyone to do the update.
+In a real application there might be some login required.
+
+.Set `conectform` collection
+image::firebasecreate.png[Set `conectform` collection, align='center']
+
+
+ 
+Then view the collections rules.
+
+.Verify collection rules
+image::firebasesecurity2.png[Verify collection rules, align='center']
+
+
+ 
+Then reset the rules to be open to the public
+
+.Set rules
+image::firebaserulesreset.png[Set rules, align='center']
+ 
 
 
 
